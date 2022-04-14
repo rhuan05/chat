@@ -1,0 +1,133 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(54, 128, 255);
+    color: white;
+    border: none;
+}
+.connectUser{
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+}
+#inputName{
+    width: 300px;
+    margin: auto;
+    padding: 5px;
+    font-size: 18px;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid rgb(180, 180, 180);
+}
+#btnEntrar{
+    width: 300px; 
+    margin: auto;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 18px;
+    border: 2px solid rgb(54, 128, 255);
+}
+p{
+    font-style: italic;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background: rgb(230, 230, 230);
+    padding: 20px;
+    border-radius: 20px;
+}
+.messages, #inputMsg, #btn{
+    border-radius: 20px;
+}
+.messages{
+    height: 300px;
+    background: white;
+    position: relative;
+    padding: 10px; 
+    overflow-y: scroll;
+}
+#inputMsg, #btn{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+#btn{
+    margin-top: -10px;
+}
+footer{
+    font-style: italic;
+    position: absolute;
+    bottom: 20px;
+    width: 98%;
+    text-align: center;
+}
+.me{
+    position: absolute;
+    right: 5px;
+    border: 2px solid rgb(54, 128, 255); 
+    color: rgb(54, 128, 255);
+    padding: 5px;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+}
+.msg{
+    position: absolute;
+    left: 5px;
+    border: 2px solid rgb(54, 128, 255); 
+    color: white;
+    background: rgb(54, 128, 255);
+    padding: 5px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+}
+.alertMessage{
+    font-style: italic;
+}
+@media(max-width: 768px){
+    #inputMsg, #btn{
+        height: 40px;
+    }
+}
+@media(max-width: 425px){
+    .container{
+        width: 300px;
+    }
+    p{
+        margin: auto;
+        margin-top: 10px;
+        width: 300px;
+        font-size: 16px;
+    }
+}
+@media(max-width: 320px){
+    .container{
+        width: 250px;
+    }
+    .me{
+        max-width: 230px;
+    }
+    .msg{
+        max-width: 230px;
+    }
+    #inputName{
+        width: 250px;
+    }
+    #btnEntrar{
+        width: 250px; 
+    }
+    p{
+        width: 250px;
+    }
+}
