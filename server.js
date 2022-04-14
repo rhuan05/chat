@@ -38,12 +38,4 @@ io.on('connection', socket => {
             socket.emit('showMsg', obj);
         });
     });
-
-
-
-
-    // socket.on('sendMessage', data => {
-    //     messages.push(data);
-    //     socket.broadcast.emit('receiveMessage', data)
-    // });
 })
