@@ -9,11 +9,12 @@ const io = socketIO(server);
 
 server.listen(3000, () => {
     console.log('Rodando no link http://localhost:3000/')
+    console.log(__dirname + '\\index.html');
 });
 
-let messages = [];
+app.use(express.static(path.join(__dirname + '/')));
 
-app.use(express.static(path.join(__dirname, 'public')));
+console.log(__dirname);
 
 io.on('connection', socket => {
     console.log('Socket conectado: ' + socket.id);

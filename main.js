@@ -57,4 +57,7 @@ function addMessage(type, message, user){
         break;
     }
     messages.scrollTop = messages.scrollHeight;
+    document.querySelector('#inputMsg').value = '';
+    document.querySelector('#inputMsg').focus();
+
 }
