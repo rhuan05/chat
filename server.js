@@ -7,12 +7,9 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
 
-server.listen(3000, () => {
-    console.log('Rodando no link http://localhost:3000/')
-    console.log(__dirname + '\\index.html');
-});
+server.listen(3000);
 
-app.use(express.static(path.join(__dirname + '/')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 console.log(__dirname);
 

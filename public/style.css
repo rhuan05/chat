@@ -69,7 +69,7 @@ p{
 footer{
     font-style: italic;
     position: absolute;
-    bottom: 20px;
+    top: 20px;
     width: 98%;
     text-align: center;
 }
